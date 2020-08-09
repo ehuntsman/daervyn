@@ -11,10 +11,13 @@ import person from './images/person.png';
 import grimole from './images/grimole.png';
 
 export default class Thinningveil extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     return (
       <div className="country-container">
-        <img src={hero} alt="Oirae" />
+        <img src={hero} alt="Thinnin Veil" />
         <h1>Thinning Veil</h1>
         <h4>/thin/ - /ing/ /veyl/</h4>
         <div className="description">
