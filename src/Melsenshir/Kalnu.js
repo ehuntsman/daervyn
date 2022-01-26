@@ -26,16 +26,24 @@ export default class Kalnu extends Component {
         <h1>Kalnu</h1>
         <h4>/cal/ - /new/</h4>
         <div className="description">
-          <p>Visit to learn more</p>
-          <h6>Notable NPCs</h6>
+          <p>This is the center of the Dwarven kingdom, home to the seven Dwarven clans. Currently, the Sishan clan is in charge with the Dorni ruling over the entire continent. There is unrest throughout the land as the Dorni is elderly and his health is declining. Most are curious of what will happen to the current leadership structure and who will be next in charge. The Dorni's Daughter is set to take her father's place, but is currently unable to do so.</p>
+          <p>Here is where the greatest members of each area such as artists and metalsmiths live and perfect their crafts. It is the dream of every Dwarf to better themselves so they may one day live here.</p>
+          <h2>Notable NPCs</h2>
           <ul>
-            <li><img src={dorni} alt="Dorni"/>Lythur Sishan- King, or ‘Dorni’, of Melsenshir. An elderly dwarf very blunt to new faces, fiercely loyal to allies</li>
-            <li><img src={cadadra} alt="Cadadra" />Cadadra Sishan-Princess of Melsenshir. Learning to one day take her father's place once she's either married or passed the trial of strength.</li>
+            <li><img src={dorni} alt="Dorni"/>
+              <h3>Lythur Sishan- King, or ‘Dorni’, of Melsenshir.</h3>
+              <p>An elderly dwarf very blunt to new faces, fiercely loyal to allies. </p>
+            </li>
+            <li><img src={cadadra} alt="Cadadra" />
+              <h3>Cadadra Sishan-Princess of Melsenshir</h3>
+              <p>Learning to one day take her father's place once she's either married or passed the trial of strength.</p>
+            </li>
           </ul>
-          <h6>Known animals in the area</h6>
+          <h2>Known animals in the area</h2>
           <ul>
             <li><img src={quartox} alt="Quartox" />Quadulas</li>
           </ul>
+          <h2>Atmospheric imagry</h2>
           <img src={kalnu2} alt="Kalnu atmosphere" />
           <img src={kalnu3} alt="Kalnu atmosphere" />
         </div>

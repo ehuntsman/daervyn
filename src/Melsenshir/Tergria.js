@@ -27,7 +27,8 @@ export default class Tergria extends Component {
         <h4>/teer/ - /gree/ - /a/</h4>
         <div className="description">
           <p>Tergria is just south of Kalnu and is home to many smaller houses of the Dwarves. These are still higher up on the wealth chain as the mines of Tergria hold a great many metals and gems.</p>
-          <h6>Known animals in the area</h6>
+          <p>Here Dwarves and craftsmen of other races who have proven themselves come to learn from the masters from Kalnu to better their craft. During specific times of the year, Dwarves who feel they are ready may challenge the current highest ranking Dwarf in their respective field.</p>
+          <h2>Known animals in the area</h2>
           <ul>
             <li><img src={quartox} alt="Quartox" />Quadulas</li>
           </ul>

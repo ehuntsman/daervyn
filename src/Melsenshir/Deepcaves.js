@@ -28,10 +28,12 @@ export default class Deepcaves extends Component {
         <div className="description">
           <h5>This is a quest only area. You may only come here with a QM or if you have been here previously on a quest</h5>
           {/* <p>needs a description</p> */}
-          <h6>Notable NPCs</h6>
+          <h2>Notable NPCs</h2>
           <ul>
-            <li>????</li>
+            <li><h3>Velanaak</h3>
+            <p>Either you know him or you do not.</p></li>
           </ul>
+          <h2>Atmospheric Imagry</h2>
           <img src={caves2} alt="Deep Caves atmosphere" />
           <img src={caves3} alt="Deep Caves atmosphere" />
         </div>

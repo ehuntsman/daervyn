@@ -25,10 +25,11 @@ export default class Geirank extends Component {
         <h4>/gair/ - /rangk/</h4>
         <div className="description">
           <p>Grasslands Country in Mel Senshir that holds the largest Harbor on Mel Senshir in the city of Stuth. Home to the crafters and artisans of the dwarves. Any who have a desire to join the trades make pilgrimage here to learn from the many masters. Extravagance is simply a byproduct of their passion, though there are some with aspirations to be the best in their field </p>
-          <h6>Known animals in the area</h6>
+          <h2>Known animals in the area</h2>
           <ul>
             <li><img src={quartox} alt="Quartox" />Quadulas</li>
           </ul>
+          <h2>Atmospheric Imagry</h2>
           <img src={geirank2} alt="Kalnu atmosphere" />
           <img src={geirank3} alt="Kalnu atmosphere" />
         </div>

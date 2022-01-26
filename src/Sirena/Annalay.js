@@ -24,14 +24,7 @@ export default class Annalay extends Component {
         <h4>/an/ - /nuh/ - /ley/</h4>
         <div className="description">
           <p>Several tall off-white columns rose up above the area, with decorations of blue against the white stucco buildings. Pink and peach coral walls and arches line most of the area, with several crushed shells in the streets. People walking throughout this central plaza on their way to various occupations. Guards clad in full plate walk on patrol and speak with the various merchants whose stores dot the buildings in the ground floor.</p>
-          {/* <h6>Notable NPCs</h6>
-          <ul>
-            <li>Gosinda - incredibly perky dwarf</li>
-          </ul>
-          <h6>Known animals in the area</h6>
-          <ul>
-            <li><img src={quartox} alt="Quartox" />Quadulas</li>
-          </ul> */}
+          <h2>Atmospheric Imagry</h2>
           <img src={annalay2} alt="Annalay atmosphere" />
           <img src={annalay3} alt="Annalay atmosphere" />
         </div>

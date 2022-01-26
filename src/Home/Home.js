@@ -35,7 +35,7 @@ export default class Home extends Component {
   render() {
     var homeHeaderStyle = {
       width: "100%",
-      height: "50vh",
+      height: "30vh",
       backgroundImage: `url(${background})`,
       backgroundSize: "cover",
       paddingTop: "40vh",
@@ -148,6 +148,13 @@ export default class Home extends Component {
 
         <section className="country-section">
           <img src={bino} alt="countries" className="icon" />
+          <h2>Story Information</h2>
+          <div className="places-container">
+            <p>races</p>
+            <Link to='/story/shards' className='country' style={kalnu}>
+              <h4>The Shards</h4>
+            </Link>
+          </div>
           <h2>Mel Senshir</h2>
           <div className="places-container">
             <Link to='/melsenshir/kalnu' className="country" style={kalnu}>

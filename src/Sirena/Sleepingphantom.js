@@ -24,10 +24,12 @@ export default class Sleepingphantom extends Component {
         <h4>/slee/ - /ping/ /fan/ - /t<i>u</i>hm/</h4>
         <div className="description">
           <p>This overgrown tavern looks like civilization and nature intertwined. Ethereal servers serve weary travelers sat at various tables. Creatures of myth and man relaxing together with an occasional wager. The scent of fresh vegetaion and spices fills the air. A bar rests on the middle of the room that looks more like a theater stage than a place to make drinks. Stairs lead to a second floor for those staying the night and rumors among the usual customers say that the arrangement of the tavern is in constant change and growth, so don't get too used to the layout for it may be completely different the next time you visit. A perfect match to her owner.</p>
-          <h6>Notable NPCs</h6>
+          <h2>Notable NPCs</h2>
           <ul>
-            <li><img src={vincent} alt="Vincent" />Vincent - Tavern owner and barkeep</li>
+            <li><img src={vincent} alt="Vincent" /><h3>Vincent</h3>
+            <p>Tavern owner and barkeep</p></li>
           </ul>
+          <h2>Atmospheric Imagry</h2>
           <img src={sleeping} alt="Tavern atmosphere" />
         </div>
         <div className="brief">

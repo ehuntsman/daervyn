@@ -20,10 +20,13 @@ import Brokenportal from './Kvilna/Brokenportal';
 import Portal from './Kvilna/Portal';
 import Hringir from './Home/Hringir';
 import Skies from './Home/Skies';
+import Shards from './Story/Shards';
 
 export default(
   <Switch>
     <Route component={Home} exact path='/' />
+
+    <Route component={Shards} path='/story/shards' />
 
     <Route component={Kalnu} path="/melsenshir/kalnu" />
     <Route component={Tergria} path="/melsenshir/tergria" />

@@ -27,17 +27,11 @@ export default class Eldrith extends Component {
         <h4>/el/ - /drith/</h4>
         <div className="description">
           <p>On the continent of Mel Senshir, the Southern mountain region is also known as the land of lakes. The people here are known for their coral and pearl farms within the lakes. Covered in misty mountain tops lush with trails littered with prayer flags and totems. Eldrith is considered the smaller Kingdom, and doesn’t hold as much power as the Northern Kingdom Mel Senshir. They are constantly attacked, but have managed to keep their stronghold for thousands of years.</p>
-          {/* <h6>Notable NPCs</h6>
-          <ul>
-            <li><img src={dorni} alt="Dorni"/>Lythur Sishan- King, or ‘Dorni’, of Eldrith. An elderly dwarf very blunt to new faces, fiercely loyal to allies</li>
-            <li><img src={cadadra} alt="Cadadra" />Cadadra Sishan-Princess of Eldrith Learning to one day take her father's place once she's either married or passed the trial of strength.</li>
-          </ul> */}
-          <h6>Known animals in the area</h6>
+          <p>Here is where those who wish to begin their journey a craftsman learn the basics of their trade. Dwarves and those of other races may prove themselves worthy to receive proper training by competing against other potential crafters in games set throughout the year.</p>
+          <h2>Known animals in the area</h2>
           <ul>
             <li><img src={quartox} alt="Quartox" />Quadulas</li>
           </ul>
-          {/* <img src={kalnu2} alt="Kalnu atmosphere" />
-          <img src={kalnu3} alt="Kalnu atmosphere" /> */}
         </div>
         <div className="brief">
           <div className="brief-item">
