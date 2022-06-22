@@ -12,6 +12,10 @@ import person from '../Kvilna/images/person.png';
 import annalay2 from './images/annalay2.jpg';
 import annalay3 from './images/annalay3.jpg';
 
+import ron from './images/lis.jpg';
+import sarah from './images/sarah.jpg';
+import lis from './images/ron.jpg';
+
 export default class Annalay extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
@@ -24,6 +28,24 @@ export default class Annalay extends Component {
         <h4>/an/ - /nuh/ - /ley/</h4>
         <div className="description">
           <p>Several tall off-white columns rose up above the area, with decorations of blue against the white stucco buildings. Pink and peach coral walls and arches line most of the area, with several crushed shells in the streets. People walking throughout this central plaza on their way to various occupations. Guards clad in full plate walk on patrol and speak with the various merchants whose stores dot the buildings in the ground floor.</p>
+          <h2>Notable NPCs</h2>
+          <ul>
+          <li>
+              <img src={lis} alt="Lis" />
+              <h3>Lis</h3>
+              <p>A masked thief that takes jobs usually taking back items wrongfully taken by other thieves and nobles. A master of illusions, he has been known to teach those who seek him out.</p>
+            </li>
+            <li>
+              <img src={ron} alt="Ron" />
+              <h3>Ron</h3>
+              <p>Friend to Lis and a fellow thief, Ron is the muscle of the pair who works to protect Los from those he steals from. A bit hard on the surface, but goes out of his way for people he likes.</p>
+            </li>
+            <li>
+              <img src={sarah} alt="Sarah" />
+              <h3>Sarah</h3>
+              <p>Owner of the magical shop in town, Sarah's Rest. A succubus who has long since given up the work of demons and instead prefers to make trades for items rather than souls. Always has something interesting for sale.</p>
+            </li>
+          </ul>
           <h2>Atmospheric Imagry</h2>
           <img src={annalay2} alt="Annalay atmosphere" />
           <img src={annalay3} alt="Annalay atmosphere" />

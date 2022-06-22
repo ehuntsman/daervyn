@@ -61,7 +61,6 @@ export default class Reijah extends Component {
               Contains Passage to:
             <ul>
             <li><Link to='/kvilna/oirae'>Oiráe</Link></li>
-            <li><Link to='/kvilna/brokenportal'>Broken Portal</Link></li>
             <li><Link to='/skies'>Daervyn Skies</Link></li>
             </ul>
           </div>

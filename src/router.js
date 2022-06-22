@@ -16,17 +16,19 @@ import Aerkyn from './Sirena/Aerkyn';
 import Cliffaerkyn from './Sirena/Cliffaerkyn';
 import Reijah from './Kvilna/Reijah';
 import Southern from './Kvilna/Southern';
-import Brokenportal from './Kvilna/Brokenportal';
+import Skaro from './Home/Skaro';
 import Portal from './Kvilna/Portal';
 import Hringir from './Home/Hringir';
 import Skies from './Home/Skies';
 import Shards from './Story/Shards';
+import Races from './Story/Races';
 
 export default(
   <Switch>
     <Route component={Home} exact path='/' />
 
     <Route component={Shards} path='/story/shards' />
+    <Route component={Races} path='/story/races' />
 
     <Route component={Kalnu} path="/melsenshir/kalnu" />
     <Route component={Tergria} path="/melsenshir/tergria" />
@@ -45,10 +47,10 @@ export default(
     <Route component={Thinningveil} path="/kvilna/thinningveil" />
     <Route component={Reijah} path="/kvilna/reijah" />
     <Route component={Southern} path="/kvilna/southernharbor" />
-    <Route component={Brokenportal} path="/kvilna/brokenportal" />
     <Route component={Portal} path="/kvilna/selnataportal" />
 
     <Route component={Hringir} path="/hringir" />
     <Route component={Skies} path="/skies" />
+    <Route component={Skaro} path="/skaro" />
   </Switch>
 )

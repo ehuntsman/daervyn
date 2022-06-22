@@ -9,6 +9,7 @@ import terrain from '../Kvilna/images/terrain.png';
 import path from '../Kvilna/images/path.png';
 import person from '../Kvilna/images/person.png';
 import vincent from './images/vincent.jpg';
+import akirhen from './images/akirhen.png';
 
 import sleeping from './images/sleepingphantom2 copy.jpg'
 
@@ -28,6 +29,8 @@ export default class Sleepingphantom extends Component {
           <ul>
             <li><img src={vincent} alt="Vincent" /><h3>Vincent</h3>
             <p>Tavern owner and barkeep</p></li>
+            <li><img src={akirhen} alt="Akirhen" /><h3>Akirhen</h3>
+            <p>An illusionist and electromancy master all bundled into a young kitsune who enjoys games.</p></li>
           </ul>
           <h2>Atmospheric Imagry</h2>
           <img src={sleeping} alt="Tavern atmosphere" />

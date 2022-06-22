@@ -13,7 +13,6 @@ import bjorvaxsmall from './images/bjorvaxsmall.jpg';
 import reijahharbor from './images/reijahsmall.jpg';
 import southernharbor from './images/southernsmall.jpg';
 import portalbjorvax from './images/portalsmall.jpg';
-import broken from './images/brokensmall.jpg';
 
 import phantom from './images/sleepingphantomsmall.jpg';
 import desert from './images/rgrasmall.jpg';
@@ -21,6 +20,8 @@ import anna from './images/annalaysmall.jpg';
 import aer from './images/Aerkynsmall.jpg';
 import cliff from './images/cliifaerkynsmall.jpg';
 
+import racessmall from './images/racessmall.png';
+import shardsmall from './images/shardssmall.png';
 import deepcavessmall from './images/deepcavessmall.jpg';
 import geiranksmall from './images/geiranksmall.jpg';
 import thinningveil from './images/thinningveilsmall.jpg';
@@ -29,6 +30,7 @@ import tergriasmall from './images/tergriasmall.png';
 import eldrithsmall from './images/eldrithsmall.jpg';
 
 import hringirsmall from './images/hringirsmall.jpg';
+import skarosmall from './images/skaro1.jpg';
 import sky from './images/skiessmall.jpg';
 
 export default class Home extends Component {
@@ -42,6 +44,14 @@ export default class Home extends Component {
       minHeight: '500px',
       backgroundPosition: "bottom",
       backgroundAttachment: "fixed"
+    }
+    var races = {
+      backgroundImage: `url(${racessmall})`,
+      backgroundSize: 'cover'
+    }
+    var shards = {
+      backgroundImage: `url(${shardsmall})`,
+      backgroundSize: 'cover'
     }
     var kalnu = {
       backgroundImage: `url(${kalnusmall})`,
@@ -107,8 +117,8 @@ export default class Home extends Component {
       backgroundImage: `url(${portalbjorvax})`,
       backgroundSize: 'cover'
     }
-    var brokenportal = {
-      backgroundImage: `url(${broken})`,
+    var skaro = {
+      backgroundImage: `url(${skarosmall})`,
       backgroundSize: 'cover'
     }
     var hringir = {
@@ -150,9 +160,11 @@ export default class Home extends Component {
           <img src={bino} alt="countries" className="icon" />
           <h2>Story Information</h2>
           <div className="places-container">
-            <p>races</p>
-            <Link to='/story/shards' className='country' style={kalnu}>
+            <Link to='/story/shards' className='country' style={shards}>
               <h4>The Shards</h4>
+            </Link>
+            <Link to='/story/races' className='country' style={races}>
+              <h4>Races</h4>
             </Link>
           </div>
           <h2>Mel Senshir</h2>
@@ -211,9 +223,6 @@ export default class Home extends Component {
             <Link to="/kvilna/selnataportal" className="country" style={portal}>
               <h4>Selnata Portal</h4>
             </Link>
-            <Link to="/kvilna/brokenportal" className="country" style={brokenportal}>
-              <h4>Broken Portal</h4>
-            </Link>
           </div>
           <h2>Other Areas</h2>
           <div className="places-container">
@@ -222,6 +231,9 @@ export default class Home extends Component {
             </Link>
             <Link to="/skies" className="country" style={skies}>
               <h4>Daervyn Skies</h4>
+            </Link>
+            <Link to="/skaro" className="country" style={skaro}>
+              <h4>Skaro</h4>
             </Link>
           </div>
         </section>

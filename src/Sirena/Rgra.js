@@ -23,7 +23,7 @@ export default class Rgra extends Component {
         <h4>/ra/ - /gra/</h4>
         <div className="description">
           <p>The desert in Sir’ena is called R’gra and is not often traveled as it is a sanctuary for spectres, ghosts and wraiths.</p>
-          {/* <h6>Notable NPCs</h6>
+          {/* <h2>Notable NPCs</h2>
           <ul>
             <li>Gosinda - incredibly perky dwarf</li>
           </ul>

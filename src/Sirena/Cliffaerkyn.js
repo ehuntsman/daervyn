@@ -22,7 +22,7 @@ export default class Cliffaerkyn extends Component {
         <h4>/clif/ /dwel/ - /ings/ /of/ /air/ - /kin/</h4>
         <div className="description">
           <p>Makeshift structures cling to the side of the mountanous walls. Home to research facilities who study the spectres of R'gra desert.</p>
-          {/* <h6>Notable NPCs</h6>
+          {/* <h2>Notable NPCs</h2>
           <ul>
             <li>Gosinda - incredibly perky dwarf</li>
           </ul>

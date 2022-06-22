@@ -10,14 +10,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  line-height: 65px;
 }
 .App-header a {
   color: white;
-  font-size: calc(10px + 2vmin);
   text-decoration: none;
 }
-
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+}
+.left {
+  font-size: calc(10px + 2vmin);
+}
 body, html {
   font-family: 'Oxygen', sans-serif;
 }

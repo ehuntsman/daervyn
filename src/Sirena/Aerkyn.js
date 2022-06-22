@@ -24,6 +24,7 @@ export default class Aerkyn extends Component {
         <h4>/air/ - /kin/</h4>
         <div className="description">
           <p>Central mountain range of Sir’ena. Home to sparse villages. Currently dealing with widespread cases of Baskerot.</p>
+          <h2>Atmospheric Imagry</h2>
           <img src={aerkyn2} alt="Aerkyn atmosphere" />
           <img src={aerkyn3} alt="Aerkyn atmosphere" />
         </div>

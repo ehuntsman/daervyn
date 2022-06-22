@@ -8,7 +8,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Link to="/">Daervyn Information</Link>
+        <div className="links">
+          <div className='left'>
+            <Link to="/">Daervyn</Link>
+          </div>
+          <div className='right'>
+            <Link to="/">home</Link>
+          </div>
+        </div>
       </header>
       {router}
     </div>
