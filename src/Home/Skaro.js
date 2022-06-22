@@ -22,7 +22,7 @@ export default class Skaro extends Component {
         <h1>Skaro</h1>
         <h4>/scar/ - /ro/</h4>
         <div className="description">
-          <p>Skaro is located in the Southern Daervyn Ocean.</p>
+          <p>Skaro is located in the Southern Daervyn Ocean that has recently appeared in Daervyn after the destruction of another plane. Currently ruled by the Pharoah, a being released by the syndicate after a raid into an unknown tomb. the citizens of skaro worship and revere the pharoah. Many associations work out of Skaro, each specialized in their own area and are willing to provide beneifts to any who have earned their respect.</p>
         </div>
         <div className="brief">
           <div className="brief-item">

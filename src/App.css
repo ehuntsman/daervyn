@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Oxygen&display=swap');
 
+body, html {
+  font-family: 'Oxygen', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +30,25 @@
 .left {
   font-size: calc(10px + 2vmin);
 }
-body, html {
-  font-family: 'Oxygen', sans-serif;
+
+.App-footer {
+  background-color: #cfcecc;
+  padding: 20px 0;
+}
+.footer-link-container {
+  max-width: 1200px;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.footer-link-container li {
+  list-style: none;
+  display: block;
+
+}
+.footer-link-container a {
+  text-decoration: none;
+  color:#282c34;
 }
