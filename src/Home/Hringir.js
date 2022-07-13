@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../Kvilna/country.css';
 import { Link } from 'react-router-dom';
 
-import hero from './images/hringir.jpg';
 import weather from '../Kvilna/images/weather.svg';
 import note from '../Kvilna/images/music.png';
 import terrain from '../Kvilna/images/terrain.png';
@@ -19,7 +18,6 @@ export default class Portal extends Component {
   render() {
     return (
       <div className="country-container">
-        <img src={hero} alt="Hringir" />
         <h1>Hringir</h1>
         <h4>/rhing/ - /gehr/</h4>
         <div className="description">

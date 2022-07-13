@@ -22,6 +22,7 @@ import Hringir from './Home/Hringir';
 import Skies from './Home/Skies';
 import Shards from './Story/Shards';
 import Races from './Story/Races';
+import Bestiary from './Story/Races'
 
 export default(
   <Switch>
@@ -29,6 +30,7 @@ export default(
 
     <Route component={Shards} path='/story/shards' />
     <Route component={Races} path='/story/races' />
+    <Route component={Bestiary} path='/story/bestiary' />
 
     <Route component={Kalnu} path="/melsenshir/kalnu" />
     <Route component={Tergria} path="/melsenshir/tergria" />

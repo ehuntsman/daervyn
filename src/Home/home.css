@@ -1,96 +1,90 @@
-.home a {
-  text-decoration: none;
-}
-
-.home .intro-inner-wrapper {
-  margin-right: 130px;
-  max-width: 420px;
-  color: white;
-  margin-left: auto;
-  padding: 0 20px;
-  position: relative;
-  text-align: left;
-}
-
-.home .intro-inner-wrapper h1, .home .intro-inner-wrapper p {
-  color: white;
-}
-
-.home .intro-inner-wrapper h1 {
-  font-family: 'Grenze Gotisch', serif;
-  font-size: 35px;
-}
-
-.home .intro-inner-wrapper p {
-  font-size: 25px;
-}
-
-.home .introduction {
-  position: relative;
-  margin-top: -5vw;
-  color: black;
-}
-
-.home .introduction .map-container {
-  background-color: rgba(96, 122, 123, 0.25);
-}
-
-.home .introduction:before {
-  background-size: 5200px;
-  content: "";
-  display: block;
+.gold-lines {
+  top: 0;
   position: absolute;
-  width: 100%;
-  height: 350px;
-  top: calc(-340px + 5vw);
-  background-repeat: no-repeat;
-  background-position: center 100%;
-  background-image: url("./images/intro-bg-trees_large.svg");
+  left: 10vw;
+  z-index: 9;
 }
 
-.home .introduction .map img {
+@-webkit-keyframes goldshine {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@-moz-keyframes goldshine {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@keyframes goldshine { 
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+
+.gradient {
+    background: linear-gradient(32deg, #814f2f 0%, #6b4c2d 30%, #a58a55 48%, #e5d4b5 56%, #967857 60%, #814f2f 100%);
+    background-size: 200% 200%;
+    -webkit-animation: goldshine 10s ease infinite;
+    -moz-animation: goldshine 10s ease infinite;
+    animation: goldshine 10s ease infinite;
+}
+
+.gold1 {
+  width: 14px;
+  height: 1371px;
+  display: inline-block;
+}
+
+.gold2 {
+  width: 7px;
+  height: 1248px;
+  margin-left: 21px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.home-banner {
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 550px;
+}
+
+.map {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.map img {
   height: auto;
   width: 100%;
 }
 
-.home .places-container {
+.map-description {
+  max-width: 850px;
   margin: auto;
-  max-width: 900px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.home .places-container .country {
-  width: 200px;
   text-align: left;
-  border: 1px solid black;
-  height: 300px;
-  margin: auto;
-  display: inline-block;
+  margin-bottom: 80px;
 }
 
-.home .places-container .country h4 {
-  color: white;
-  margin-top: 225px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.35);
-  text-align: right;
-  font-family: 'Grenze Gotisch', serif;
-  font-size: 20px;
+.home .places-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px 0;
 }
 
-.home h2, .home h3 {
-  font-family: 'Grenze Gotisch', serif;
-  margin: 0;
-  position: relative;
+.home .places-container a {
+  margin: 0 15px;
+  color: #c8bbab;
 }
 
-.home h2 {
-  font-size: 30px;
-}
-
-.home h3 {
-  font-size: 25px;
+.home .places-container a img {
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
 
 .home .icon {
@@ -99,41 +93,20 @@
   position: relative;
 }
 
-.map-container {
-  display: flex;
+.logo-header-container {
+  height: 100%;
+  position: relative;
 }
 
-.map-container .map {
-  width: 70%;
-}
-
-.map-container .map-description {
-  width: 30%;
-  padding: 0 20px;
+.logo-header-container img {
+  height: 180px;
+  position: absolute;
+  right: 68px;
+  top: 243px;
 }
 
 @media screen and (max-width: 40em) {
-  .home .introduction p {
-    padding: 0 20px;
+  .map {
+    width: 95vw;
   }
-  .page-intro {
-    padding-top: 20px !important;
-  }
-  .page-intro p {
-    display: none;
-  }
-  .map-container {
-    display: block;
-  }
-  .map-container .map {
-    width: 100%;
-  }
-  .map-container .map-description {
-    width: 90%;
-    padding: 20px;
-  }
-}
-
-.country-section {
-  margin-bottom: 100px;
 }
