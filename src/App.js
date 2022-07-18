@@ -81,7 +81,9 @@ function App() {
             </ul>
           </div>
           <div className="footer-logo">
-            <img src={logo} alt="Daervyn" />
+            <Link to="/">
+              <img src={logo} alt="Daervyn" />
+            </Link>
           </div>
           <div className="footer-right">
             <ul>

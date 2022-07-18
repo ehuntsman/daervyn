@@ -53,7 +53,7 @@ export default class Home extends Component {
         </div>
         <section className="container">
           <h1>Explore the World of Daervyn</h1>
-          <img src={pattern} alt="pattern" />
+          <img src={pattern} alt="pattern" className="pattern-image" />
           <h2>Ours is a world unlike any other.</h2>
           <h3>Enhance your visit with information, sights and sounds.</h3>
           <div className="map">
@@ -62,17 +62,14 @@ export default class Home extends Component {
           <div className="map-description">
             <p>In the beginning there were the dwarves. Dwarves of all different abilities and cultures. But wars and in-fighting wiped out many of the other tribes until the Ice dwarves of  Mel Senshir were all that remained. At least that's how the Dwarves tell it in Nordic style oral tellings.</p>
             <p>Daervyn is made up of three continents.They are listed below, from left to right on the map.</p>
-            <p>Mel Senshir is a large mountainous continent. Some of the mountains are so high that they never see anything but ice and snow. These mountains are home to the seven tribes of the Senshirian Dwarves.</p>
-            <p>Sir’ena is the continent most commonly shown in the center of the map The central mountain range of Sir’ena is called Aerkyn and is home to the Drax and Valravn peoples. Both bird like humanoids, the Drax are light and gold in color and Valravns are dark and inky.</p>
-            <p>The countries of Gen’ru, Bjorvax, Oirae and Njor’fur make up different regions of K'vilna.  There is a very large lake called Vie in the north east corner of Oirae. Rumors are that Vie used to be home to Merfolk and sirens  but there is no evidence to support this aside from strange human-like bones and scales that get found fossilized in the rocks. The area that lays to the south of Gen’ru and Bjorvax. A mainly flat grasslands filled with agricultural communities.</p>
           </div>
         </section>
 
 
         <section className="container">
-          <img src={solidPattern} alt="pattern" className="story-color" />
+          <img src={solidPattern} alt="pattern" className="story-color pattern-image" />
           <h1>Story Information</h1>
-          <div className="places-container">
+          <div className="places-container story">
             <Link to='/story/shards' className='country'>
               <img src={shardsmall} alt="shards" />
               <h3>The Shards</h3>
@@ -86,9 +83,9 @@ export default class Home extends Component {
               <h3>Bestiary</h3>
             </Link>
           </div>
-          <img src={solidPattern} alt="pattern" className="melsensir-color" />
+          <img src={solidPattern} alt="pattern" className="melsensir-color pattern-image" />
           <h1>Mel Senshir</h1>
-          <div className="places-container">
+          <div className="places-container melsenshir">
             <Link to='/melsenshir/kalnu' className="country">
               <img src={kalnusmall} alt="kalnu" />
               <h3>Kalnu</h3>
@@ -110,9 +107,12 @@ export default class Home extends Component {
               <h3>Geirank</h3>
             </Link>
           </div>
-          <img src={solidPattern} alt="pattern" className="sirena-color" />
+          <div className="map-description">
+            <p>Mel Senshir is a large mountainous continent. Some of the mountains are so high that they never see anything but ice and snow. These mountains are home to the seven tribes of the Senshirian Dwarves.</p>
+          </div>
+          <img src={solidPattern} alt="pattern" className="sirena-color pattern-image" />
           <h1>Sir'ena</h1>
-          <div className="places-container">
+          <div className="places-container sirena">
             <Link to='/sirena/sleepingphantom' className="country">
               <img src={phantom} alt="sleeping phantom" />
               <h3>Sleeping Phantom</h3>
@@ -134,9 +134,12 @@ export default class Home extends Component {
               <h3>Cliff Dwellings</h3>
             </Link>
           </div>
-          <img src={solidPattern} alt="pattern" className="kvilna-color" />
+          <div className="map-description">
+            <p>Sir’ena is the continent most commonly shown in the center of the map The central mountain range of Sir’ena is called Aerkyn and is home to the Drax and Valravn peoples. Both bird like humanoids, the Drax are light and gold in color and Valravns are dark and inky.</p>
+          </div>
+          <img src={solidPattern} alt="pattern" className="kvilna-color pattern-image" />
           <h1>K'vilna</h1>
-          <div className="places-container">
+          <div className="places-container kvilna">
             <Link to='/kvilna/oirae' className="country">
               <img src={oiraesmall} alt="oirae" />
               <h3>Oiráe</h3>
@@ -158,9 +161,12 @@ export default class Home extends Component {
               <h3>Southern Harbor</h3>
             </Link>
           </div>
-          <img src={solidPattern} alt="pattern" className="story-color" />
+          <div className="map-description">
+            <p>The countries of Gen’ru, Bjorvax, Oirae and Njor’fur make up different regions of K'vilna.  There is a very large lake called Vie in the north east corner of Oirae. Rumors are that Vie used to be home to Merfolk and sirens  but there is no evidence to support this aside from strange human-like bones and scales that get found fossilized in the rocks. The area that lays to the south of Gen’ru and Bjorvax. A mainly flat grasslands filled with agricultural communities.</p>
+          </div>
+          <img src={solidPattern} alt="pattern" className="story-color pattern-image" />
           <h1>Other Areas</h1>
-          <div className="places-container">
+          <div className="places-container story">
             <Link to="/hringir" className="country">
               <img src={hringir} alt="hringir" />
               <h3>Hringir</h3>

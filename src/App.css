@@ -32,14 +32,28 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 40px;
+  }
+  .container h1, .container h2, .container h3, .container h4, .container p {
+    padding: 10px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  p {
+    font-size: 20px;
+  }
+}
+
 .App {
   text-align: center;
   background-color: #000000;
   background-image: url("./Home/images/backgroundpattern.png");
-}
-.App img {
-  height: 30px;
-  padding: 10px;
 }
 
 .header {
@@ -51,7 +65,7 @@ a {
   top: 0;
 }
 
-.header-container {
+.header-container-desktop {
   display: flex;
   justify-content: space-between;
   max-width: 1400px;
@@ -60,8 +74,32 @@ a {
   text-align: center;
 }
 
+.header-container-mobile {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-container-desktop {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header-container-mobile {
+    display: block;
+  }
+}
+
 .header-part {
   height: 50px;
+}
+
+.logo img {
+  height: 30px;
+  margin-top: 10px;
 }
 
 .header-left {
@@ -119,6 +157,12 @@ a {
   padding: 0 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
+
 /********************************************************************** colors for svg patterns */
 
 .story-color {
@@ -135,6 +179,17 @@ a {
 
 .kvilna-color {
   filter: invert(14%) sepia(9%) saturate(1058%) hue-rotate(261deg) brightness(92%) contrast(86%);
+}
+
+.pattern-image {
+  max-width: 90vw;
+  height: 30px;
+}
+
+@media screen and (max-width: 40em) {
+  .pattern-image {
+    display: none
+  }
 }
 
 /**************************************************************************** footer */
@@ -171,4 +226,16 @@ a {
 .footer-container a {
   text-decoration: none;
   color:#c8bbab;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    height: 100px;
+  }
+  .footer img {
+    height: 75px;
+  }
+  .footer-left, .footer-right {
+    display: none;
+  }
 }

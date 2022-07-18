@@ -1,8 +1,16 @@
+:root {
+  --story: #363b37;
+  --melsenshir: #584e42;
+  --sirena: #493125;
+  --kvilna: #352c33;
+}
+
 .gold-lines {
   top: 0;
   position: absolute;
   left: 10vw;
   z-index: 9;
+  display: block;
 }
 
 @-webkit-keyframes goldshine {
@@ -54,18 +62,21 @@
   width: 100%;
   max-width: 900px;
   margin: auto;
+  padding-top: 30px;
 }
 
 .map img {
   height: auto;
   width: 100%;
+  padding: 0;
 }
 
 .map-description {
-  max-width: 850px;
+  max-width: 600px;
   margin: auto;
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  padding: 0 10px;
 }
 
 .home .places-container {
@@ -76,12 +87,12 @@
   margin: 40px 0;
 }
 
-.home .places-container a {
+.country {
   margin: 0 15px;
   color: #c8bbab;
 }
 
-.home .places-container a img {
+.country img {
   width: 100%;
   height: auto;
   padding: 0;
@@ -105,8 +116,61 @@
   top: 243px;
 }
 
+@media screen and (max-width: 750px) {
+  .home .places-container {
+    display: block;
+  }
+  .country {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+  }
+  .country:nth-child(odd){
+    flex-direction: row-reverse;
+  }
+  .country img {
+    height: 125px;
+    width: auto;
+    margin: 0 5% 0 10%;
+  }
+  .country:nth-child(odd) img {
+    margin: 0 10% 0 5%;
+  }
+  .story .country {
+    background-color: var(--story);
+  }
+  .melsenshir .country {
+    background-color: var(--melsenshir);
+  }
+  .kvilna .country {
+    background-color: var(--kvilna);
+  }
+  .sirena .country {
+    background-color: var(--sirena);
+  }
+}
+
 @media screen and (max-width: 40em) {
   .map {
-    width: 95vw;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gold-lines {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .logo-header-container img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .home-banner {
+    min-height: 243px;
   }
 }
