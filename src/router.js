@@ -22,7 +22,7 @@ import Hringir from './Home/Hringir';
 import Skies from './Home/Skies';
 import Shards from './Story/Shards';
 import Races from './Story/Races';
-import Bestiary from './Story/Races'
+import Bestiary from './Home/Home';
 
 export default(
   <Switch>

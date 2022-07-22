@@ -54,8 +54,8 @@ export default class Home extends Component {
         <section className="container">
           <h1>Explore the World of Daervyn</h1>
           <img src={pattern} alt="pattern" className="pattern-image" />
-          <h2>Ours is a world unlike any other.</h2>
-          <h3>Enhance your visit with information, sights and sounds.</h3>
+          <p className="subheader">Ours is a world unlike any other.</p>
+          <h5>Enhance your visit with information, sights and sounds.</h5>
           <div className="map">
             <img src={daervyn} alt="map of Daervyn" className="homemap" />
           </div>
@@ -66,21 +66,21 @@ export default class Home extends Component {
         </section>
 
 
-        <section className="container">
+        <section>
           <img src={solidPattern} alt="pattern" className="story-color pattern-image" />
           <h1>Story Information</h1>
           <div className="places-container story">
             <Link to='/story/shards' className='country'>
               <img src={shardsmall} alt="shards" />
-              <h3>The Shards</h3>
+              <h5>The Shards</h5>
             </Link>
             <Link to='/story/races' className='country'>
               <img src={racessmall} alt="races" />
-              <h3>Races</h3>
+              <h5>Races</h5>
             </Link>
             <Link to='/story/bestiary' className='country'>
               <img src={beastsmall} alt="bestiary" />
-              <h3>Bestiary</h3>
+              <h5>Bestiary (coming soon)</h5>
             </Link>
           </div>
           <img src={solidPattern} alt="pattern" className="melsensir-color pattern-image" />
@@ -88,23 +88,23 @@ export default class Home extends Component {
           <div className="places-container melsenshir">
             <Link to='/melsenshir/kalnu' className="country">
               <img src={kalnusmall} alt="kalnu" />
-              <h3>Kalnu</h3>
+              <h5>Kalnu</h5>
             </Link>
             <Link to='/melsenshir/tergria' className="country">
               <img src={tergriasmall} alt="tergria" />
-              <h3>Tergria</h3>
+              <h5>Tergria</h5>
             </Link>
             <Link to='/melsenshir/eldrith' className="country">
               <img src={eldrithsmall} alt="eldrith" />
-              <h3>Eldrith</h3>
+              <h5>Eldrith</h5>
             </Link>
             <Link to='/melsenshir/deepcaves' className="country">
               <img src={deepcavessmall} alt="deepcaves" />
-              <h3>Deep Caves</h3>
+              <h5>Deep Caves</h5>
             </Link>
             <Link to='/melsenshir/geirank' className="country">
               <img src={geiranksmall} alt="geirank" />
-              <h3>Geirank</h3>
+              <h5>Geirank</h5>
             </Link>
           </div>
           <div className="map-description">
@@ -115,23 +115,23 @@ export default class Home extends Component {
           <div className="places-container sirena">
             <Link to='/sirena/sleepingphantom' className="country">
               <img src={phantom} alt="sleeping phantom" />
-              <h3>Sleeping Phantom</h3>
+              <h5>Sleeping Phantom</h5>
             </Link>
             <Link to='/sirena/annalay' className="country">
               <img src={anna} alt="annalay" />
-              <h3>Annalay</h3>
+              <h5>Annalay</h5>
             </Link>
             <Link to='/sirena/rgra' className="country">
               <img src={rgra} alt="rgra" />
-              <h3>R'gra desert</h3>
+              <h5>R'gra desert</h5>
             </Link>
             <Link to='/sirena/aerkyn' className="country">
               <img src={aer} alt="aerkyn" />
-              <h3>Aerkyn</h3>
+              <h5>Aerkyn</h5>
             </Link>
             <Link to='/sirena/aerkyncliff' className="country">
               <img src={cliff} alt="aerkyn cliff" />
-              <h3>Cliff Dwellings</h3>
+              <h5>Cliff Dwellings</h5>
             </Link>
           </div>
           <div className="map-description">
@@ -142,23 +142,23 @@ export default class Home extends Component {
           <div className="places-container kvilna">
             <Link to='/kvilna/oirae' className="country">
               <img src={oiraesmall} alt="oirae" />
-              <h3>Oiráe</h3>
+              <h5>Oiráe</h5>
             </Link>
             <Link to='/kvilna/bjorvax' className="country" >
               <img src={bjorvaxsmall} alt="bjorvax" />
-              <h3>Bjorvax</h3>
+              <h5>Bjorvax</h5>
             </Link>
             <Link to="/kvilna/thinningveil" className="country">
               <img src={veilsmall} alt="viel" />
-              <h3>Thinning Veil</h3>
+              <h5>Thinning Veil</h5>
             </Link>
             <Link to="/kvilna/reijah" className="country">
               <img src={reijahharbor} alt="reijah" />
-              <h3>Reijah Harbor</h3>
+              <h5>Reijah Harbor</h5>
             </Link>
             <Link to="/kvilna/southernharbor" className="country">
               <img src={southernharbor} alt="southern harbor" />
-              <h3>Southern Harbor</h3>
+              <h5>Southern Harbor</h5>
             </Link>
           </div>
           <div className="map-description">
@@ -169,15 +169,15 @@ export default class Home extends Component {
           <div className="places-container story">
             <Link to="/hringir" className="country">
               <img src={hringir} alt="hringir" />
-              <h3>Hringir</h3>
+              <h5>Hringir</h5>
             </Link>
             <Link to="/skies" className="country">
               <img src={sky} alt="skies" />
-              <h3>Daervyn Skies</h3>
+              <h5>Daervyn Skies</h5>
             </Link>
             <Link to="/skaro" className="country">
               <img src={skaro} alt="skaro" />
-              <h3>Skaro</h3>
+              <h5>Skaro</h5>
             </Link>
           </div>
         </section>

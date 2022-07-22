@@ -1,0 +1,67 @@
+.race-third {
+  display: inline-block;
+  padding: 1.5%;
+  text-align: left;
+  vertical-align: top;
+  h3 {
+    margin: 0;
+  }
+  h4 {
+   font-family: 'Uncial Antiqua', serif;
+   font-size: 20px;
+   font-weight: 100;
+  }
+  h5 {
+    font-family: 'Uncial Antiqua', serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ada193;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+.race-stats {
+  padding: 5px 20px 10px 20px;
+  background-color: #584e42;
+}
+
+.race-grid {
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 32px;
+  display: grid;
+  @media screen and (max-width: 820px) {
+    display: block;
+  }
+}
+
+.race .half-container {
+  text-align: center;
+}
+
+.race .story-color {
+  max-width: 80vw;
+  height: 30px;
+  margin: 45px 0;
+}
+
+.navi {
+  height: 50px;
+  backdrop-filter: blur(25px) saturate(1.1) brightness(0.5);
+  margin: 40px auto;
+  li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 50px;
+  }
+  a {
+    color: #c8bbab;
+  }
+  @media screen and (max-width: 820px) {
+    height: auto;
+  }
+}

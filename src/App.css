@@ -1,19 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Uncial+Antiqua&display=swap');
 
+*{
+  box-sizing: border-box;
+}
+
 body, html {
   font-family: 'Cormorant Garamond', serif;
-  color: #c8bbab;
+  color: #eae9e8;
 }
 
 h1 {
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Uncial Antiqua', serif;
   font-size: 50px;
   font-weight: 300;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-size: 64;
+  color: #c8bbab;
+}
+
+.subheader {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 45px;
+  color: #c8bbab;
+  font-weight: 300;
 }
 
 h3 {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 37px;
+  color: #c8bbab;
+  font-weight: 300;
+}
+
+h5 {
   font-size: 22px;
   font-family: 'Cormorant Garamond', serif;
   margin: 0;
@@ -32,7 +58,7 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   h1 {
     font-size: 40px;
   }
@@ -151,16 +177,38 @@ a {
   font-size: calc(10px + 2vmin);
 }
 
+.first-letter {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/********************************************************************** page-layout */
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    padding: 0;
+.half-container {
+  max-width: 50%;
+  vertical-align: top;
+  text-align: left;
+  display: inline-block;
+}
+
+@media screen and (max-width: 650px) {
+  .half-container {
+    max-width: 90%;
   }
+}
+
+.my {
+  margin: 40px auto;
 }
 
 /********************************************************************** colors for svg patterns */
