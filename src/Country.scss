@@ -34,6 +34,19 @@
       height: 200px;
     }
   }
+  .weather-box {
+    display: inline-block;
+    width: 50%;
+    h2 {
+      display: inline;
+      vertical-align: top;
+    }
+    img {
+      max-height: 62px;
+      margin: 0;
+      vertical-align: bottom;
+    }
+  }
 }
 
 

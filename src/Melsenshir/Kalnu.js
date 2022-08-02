@@ -3,15 +3,12 @@ import '../Country.scss';
 import { Link } from 'react-router-dom';
 
 import pattern from '../Home/images/patternsolid.svg';
+import snow from './images/snow.svg';
+import mooncloud from './images/moon-cloud.svg';
 
 import hero from './images/kalnuheader.png';
 import kalnu from './images/kalnu.png';
-import weather from '../Kvilna/images/weather.svg';
-import note from './images/music.png';
-import terrain from './images/terrain.png';
 import path from './images/path.png';
-import person from './images/person.png';
-import quartox from './images/quartox.png';
 import dorni from './images/dorni.jpg';
 import cadadra from './images/cadadra.jpg'
 
@@ -123,58 +120,47 @@ export default class Kalnu extends Component {
           </div>
         </div>
 
-
-        <div className="country-container">
-          <h1>Kalnu</h1>
-          <div className="description">
-            <p>This is the center of the Dwarven kingdom, home to the seven Dwarven clans. Currently, the Sishan clan is in charge with the Dorni ruling over the entire continent. There is unrest throughout the land as the Dorni is elderly and his health is declining. Most are curious of what will happen to the current leadership structure and who will be next in charge. The Dorni's Daughter is set to take her father's place, but is currently unable to do so.</p>
-            <p>Here is where the greatest members of each area such as artists and metalsmiths live and perfect their crafts. It is the dream of every Dwarf to better themselves so they may one day live here.</p>
-            <h2>Notable NPCs</h2>
-            <ul>
-              <li><img src={dorni} alt="Dorni"/>
-                <h3>Lythur Sishan- King, or ‘Dorni’, of Melsenshir.</h3>
-                <p>An elderly dwarf very blunt to new faces, fiercely loyal to allies. </p>
-              </li>
-              <li><img src={cadadra} alt="Cadadra" />
-                <h3>Cadadra Sishan-Princess of Melsenshir</h3>
-                <p>Learning to one day take her father's place once she's either married or passed the trial of strength.</p>
-              </li>
-            </ul>
-            <h2>Known animals in the area</h2>
-            <ul>
-              <li><img src={quartox} alt="Quartox" />Quadulas</li>
-            </ul>
+        <div className="container">
+          <h2>Weather</h2>
+          <div className="weather-box">
+            <h3>Winter Weather</h3>
+            <div>
+              <img src={snow} alt="snow" />
+              <h2>34-37 °F</h2>
+            </div>
+            <p>Very cold with occasional white out blizzards</p>
           </div>
-          <div className="brief">
-            <div className="brief-item">
-              <img src={terrain} alt="terrain" className="icon" />
-              This mountainous region is always covered in snow and home to a clan of dwarves who carve their home into the mountain.
+          <div className="weather-box">
+            <h3>Summer Weather</h3>
+            <div>
+              <img src={mooncloud} alt="snow" />
+              <h2>68-73 °F</h2>
             </div>
-            <div className="brief-item">
-              <img src={weather} alt="weather" className="icon" />
-              Cold with occasion blizzards in winter months
-            </div>
-            <div className="brief-item">
-              <img src={person} alt="NPCs" className="icon" />
-              Dense population of Dwarves
-            </div>
-            <div className="brief-item">
-              <img src={path} alt="passage" className="icon" />
-                Contains Passage to:
-              <ul>
-              <li><Link to='/melsenshir/tergria'>Tergria</Link></li>
-              <li><Link to='/melsenshir/eldrith'>Eldrith</Link></li>
-              <li><Link to='/skies'>Daervyn Skies</Link></li>
-              </ul>
-            </div>
-            <div className="brief-item">
-              <img src={note} alt="music" className="icon" />
-              Musical Playlists
-              <ul>
-              <li><iframe src="https://open.spotify.com/embed/playlist/48OZ4wmKCZhF1LibdZ9zlE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-              <li><iframe src="https://open.spotify.com/embed/playlist/6kzpY1fVnFkwMUKPZKtuQc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-              <li><iframe src="https://open.spotify.com/embed/playlist/3I29jXuUnaRKYhAYpVUHAa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-              </ul>
+            <p>Mild days with Cloudy Nights</p>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="passage-box">
+            <div className="passage">
+              <p>map here</p>
+              <div>
+                <h3>Contains passage to:</h3>
+                <ul>
+                  <li><Link to='/melsenshir/tergria'>
+                    <h4>Tergria</h4>
+                    <p>Tergria is just to the South of Kalnu.</p>
+                  </Link></li>
+                  <li><Link to='/melsenshir/eldrith'>
+                    <h4>Eldrith</h4>
+                    <p>Eldrith is much further South.</p>  
+                  </Link></li>
+                  <li><Link to='/skies'>
+                    <h4>Daervyn Skies</h4>
+                    <p>There is a flight point in Kalnu that has flying serpents available for public use.</p>
+                  </Link></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
