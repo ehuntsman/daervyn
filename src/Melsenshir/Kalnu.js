@@ -11,6 +11,7 @@ import kalnu from './images/kalnu.png';
 import path from './images/path.png';
 import dorni from './images/dorni.jpg';
 import cadadra from './images/cadadra.jpg'
+import kalnumap from './images/kalnumap.png';
 
 export default class Kalnu extends Component {
   componentDidMount() {
@@ -143,7 +144,7 @@ export default class Kalnu extends Component {
         <div className="container">
           <div className="passage-box">
             <div className="passage">
-              <p>map here</p>
+              <img src={kalnumap} alt="Kalnu map" />
               <div>
                 <h3>Contains passage to:</h3>
                 <ul>
@@ -164,6 +165,7 @@ export default class Kalnu extends Component {
             </div>
           </div>
         </div>
+        
       </div>
     )
   }

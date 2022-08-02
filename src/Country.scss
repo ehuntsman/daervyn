@@ -47,6 +47,37 @@
       vertical-align: bottom;
     }
   }
+  .passage-box {
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #584e42;
+    margin: 20px 0 50px 0;
+    h3 {
+      margin-bottom: 0;
+    }
+    .passage {
+      display: flex;
+      text-align: left;
+      img {
+        max-width: 250px;
+      }
+      div {
+        padding-left: 40px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      a {
+        color: #ada193;
+        text-decoration: none;
+      }
+      p {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 
