@@ -8,7 +8,6 @@ import mooncloud from './images/moon-cloud.svg';
 
 import hero from './images/kalnuheader.png';
 import kalnu from './images/kalnu.png';
-import path from './images/path.png';
 import dorni from './images/dorni.jpg';
 import cadadra from './images/cadadra.jpg'
 import kalnumap from './images/kalnumap.png';
@@ -22,8 +21,8 @@ export default class Kalnu extends Component {
       <div className="countries">
         <div className="container">
           <img src={hero} alt="the shards" />
-          <h1>The Shards</h1>
-          <p className="subheader">The Elemental Gods of Daervyn</p>
+          <h1>Kalnu</h1>
+          <p className="subheader">Home of the Dorni</p>
           <img src={pattern} alt="pattern" className="melsensir-color pattern-image" />
         </div>
 
