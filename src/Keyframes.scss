@@ -1,0 +1,91 @@
+// Base *****************************************************************************
+.ring-90 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring90 3s;
+}
+
+.ring-85 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring85 3s;
+}
+
+.ring-50 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring50 3s;
+}
+
+.ring-20 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring20 3s;
+}
+
+.ring-10 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring10 3s;
+}
+
+.ring-8 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring8 3s;
+}
+
+.ring-5 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring5 3s;
+}
+
+.ring-2 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring2 3s;
+}
+
+
+// keyframes *****************************************************************************
+
+@keyframes ring90 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 90, 10;}
+}
+
+@keyframes ring85 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 85, 15;}
+}
+
+@keyframes ring50 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 50, 50;}
+}
+
+@keyframes ring20 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 20, 80;}
+}
+
+@keyframes ring10 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 10, 90;}
+}
+
+@keyframes ring8 {
+  0% { stroke-dasharray: 0, 100;}
+  100% { stroke-dasharray: 8, 92;}
+}
+
+@keyframes ring5 {
+  0% { stroke-dasharray: 0, 100;}
+  100% { stroke-dasharray: 5, 95;}
+}
+
+@keyframes ring2 {
+  0% { stroke-dasharray: 0, 100;}
+  100% { stroke-dasharray: 2, 98; }
+}

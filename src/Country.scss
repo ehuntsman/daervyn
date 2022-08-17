@@ -1,3 +1,5 @@
+@import './Keyframes.scss';
+
 .countries {
   .half-container img {
     padding-left: 32px;
@@ -76,6 +78,9 @@
       p {
         margin-top: 0;
       }
+      @media screen and (max-width: 900px) {
+        display: block;
+      }
     }
   }
 }
@@ -113,24 +118,6 @@
   opacity: 0.2;
 }
 
-.kalnu-segment-1 {
-  stroke: #ffffff;
-  opacity: 0.5;
-  animation: kalnu1 3s;
-}
-
-.kalnu-segment-2 {
-  stroke: #ffffff;
-  opacity: 0.5;
-  animation: kalnu2 3s;
-}
-
-.kalnu-segment-3 {
-  stroke: #ffffff;
-  opacity: 0.5;
-  animation: kalnu3 3s;
-}
-
 .donut-percent {
   animation: donutfadelong 1s;
 }
@@ -141,33 +128,6 @@
   }
   100% {
       opacity: 1;
-  }
-}
-
-@keyframes kalnu1 {
-  0% {
-      stroke-dasharray: 0, 100;
-  }
-  100% {
-      stroke-dasharray: 90, 10;
-  }
-}
-
-@keyframes kalnu2 {
-  0% {
-      stroke-dasharray: 0, 100;
-  }
-  100% {
-      stroke-dasharray: 8, 92;
-  }
-}
-
-@keyframes kalnu3 {
-  0% {
-      stroke-dasharray: 0, 100;
-  }
-  100% {
-      stroke-dasharray: 2, 98;
   }
 }
 

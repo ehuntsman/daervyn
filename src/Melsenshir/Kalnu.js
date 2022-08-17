@@ -42,7 +42,7 @@ export default class Kalnu extends Component {
             <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
               <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#171717"></circle>
               <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5"></circle>
-              <circle class="kalnu-segment-1" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="90 10" stroke-dashoffset="25"></circle>
+              <circle class="ring-90" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="90 10" stroke-dashoffset="25"></circle>
               <g class="donut-text">
                 <text y="50%" transform="translate(0, 2)">
                   <tspan x="50%" text-anchor="middle" class="donut-percent">90%</tspan>   
@@ -57,7 +57,7 @@ export default class Kalnu extends Component {
             <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
               <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#171717"></circle>
               <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5"></circle>
-              <circle class="kalnu-segment-2" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="8 92" stroke-dashoffset="25"></circle>
+              <circle class="ring-8" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="8 92" stroke-dashoffset="25"></circle>
               <g class="donut-text">
                 <text y="50%" transform="translate(0, 2)">
                   <tspan x="50%" text-anchor="middle" class="donut-percent">8%</tspan>   
@@ -72,7 +72,7 @@ export default class Kalnu extends Component {
             <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
               <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#171717"></circle>
               <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5"></circle>
-              <circle class="kalnu-segment-3" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="2 98" stroke-dashoffset="25"></circle>
+              <circle class="ring-2" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="2 98" stroke-dashoffset="25"></circle>
               <g class="donut-text">
                 <text y="50%" transform="translate(0, 2)">
                   <tspan x="50%" text-anchor="middle" class="donut-percent">2%</tspan>   
