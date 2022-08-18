@@ -2,16 +2,13 @@ import React, { Component } from 'react';
 import '../Kvilna/country.css';
 import { Link } from 'react-router-dom';
 
-import hero from './images/geirank.jpg';
-import weather from '../Kvilna/images/weather.svg';
-import note from './images/music.png';
-import terrain from './images/terrain.png';
-import path from './images/path.png';
-import person from './images/person.png';
-import quartox from './images/quartox.png';
-
-import geirank2 from './images/geirank2.jpg';
-import geirank3 from './images/geirank3.jpg';
+import hero from './images/geirankheader.png';
+import deepcaves from './images/deepcaves.png';
+import geirankmap from './images/geirankmap.png';
+import geirank from './images/geirank.png';
+import pattern from '../Home/images/patternsolid.svg';
+import snow from './images/snow.svg';
+import mooncloud from './images/moon-cloud.svg';
 
 export default class Geirank extends Component {
   componentDidMount() {
@@ -19,51 +16,141 @@ export default class Geirank extends Component {
   }
   render() {
     return (
-      <div className="country-container">
-        <img src={hero} alt="Kalnu" />
-        <h1>Geirank</h1>
-        <h4>/gair/ - /rangk/</h4>
-        <div className="description">
-          <p>Grasslands Country in Mel Senshir that holds the largest Harbor on Mel Senshir in the city of Stuth. Home to the crafters and artisans of the dwarves. Any who have a desire to join the trades make pilgrimage here to learn from the many masters. Extravagance is simply a byproduct of their passion, though there are some with aspirations to be the best in their field </p>
-          <h2>Known animals in the area</h2>
-          <ul>
-            <li><img src={quartox} alt="Quartox" />Quadulas</li>
-          </ul>
-          <h2>Atmospheric Imagry</h2>
-          <img src={geirank2} alt="Kalnu atmosphere" />
-          <img src={geirank3} alt="Kalnu atmosphere" />
+      <div className="countries">
+        <div className="container">
+          <img src={hero} alt="Geirank" />
+          <h1>Geirank</h1>
+          <p className="subheader">The green pastures of Mel Senshir</p>
+          <img src={pattern} alt="pattern" className="melsensir-color pattern-image" />
         </div>
-        <div className="brief">
-          <div className="brief-item">
-            <img src={terrain} alt="terrain" className="icon" />
-            Lush region covered in soft fertile soil perfect for farming
+
+        <div className="container my">
+          <div className="half-container shard-text">
+            <p><span className="first-letter">G</span>rasslands Country in Mel Senshir that holds the largest Harbor on Mel Senshir in the city of Stuth. Home to the crafters and artisans of the dwarves. Any who have a desire to join the trades make pilgrimage here to learn from the many masters. Extravagance is simply a byproduct of their passion, though there are some with aspirations to be the best in their field.</p>
           </div>
-          <div className="brief-item">
-            <img src={weather} alt="weather" className="icon" />
-            Moderate temperature with high chance for rain
-          </div>
-          <div className="brief-item">
-            <img src={person} alt="NPCs" className="icon" />
-            Dense population of Dwarves
-          </div>
-          <div className="brief-item">
-            <img src={path} alt="passage" className="icon" />
-              Contains Passage to:
-            <ul>
-            <li><Link to='/melsenshir/eldrith'>Eldrith</Link></li>
-            <li><Link to='/skies'>Daervyn Skies</Link></li>
-            </ul>
-          </div>
-          <div className="brief-item">
-            <img src={note} alt="music" className="icon" />
-            Musical Playlists
-            <ul>
-            <li><iframe src="https://open.spotify.com/embed/playlist/48OZ4wmKCZhF1LibdZ9zlE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-            <li><iframe src="https://open.spotify.com/embed/playlist/6kzpY1fVnFkwMUKPZKtuQc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-            <li><iframe src="https://open.spotify.com/embed/playlist/3I29jXuUnaRKYhAYpVUHAa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-            </ul>
+          <div className="half-container">
+            <img src={geirank} alt="Deep Caves" />
           </div>
         </div>
+
+        <div className="country-races container">
+          <h2>Races</h2>
+          <div class="race-chart">
+            <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#171717"></circle>
+              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5"></circle>
+              <circle class="ring-50" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="50 50" stroke-dashoffset="25"></circle>
+              <g class="donut-text">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donut-percent">50%</tspan>   
+                </text>
+                <text y="60%" transform="translate(0, 3)">
+                  <tspan x="50%" text-anchor="middle" class="donut-data">Dwarves</tspan>   
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="race-chart">
+            <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#171717"></circle>
+              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5"></circle>
+              <circle class="ring-20" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="20 80" stroke-dashoffset="25"></circle>
+              <g class="donut-text">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donut-percent">20%</tspan>   
+                </text>
+                <text y="60%" transform="translate(0, 3)">
+                  <tspan x="50%" text-anchor="middle" class="donut-data">Gnomes</tspan>   
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="race-chart">
+            <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#171717"></circle>
+              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5"></circle>
+              <circle class="ring-10" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="10 90" stroke-dashoffset="25"></circle>
+              <g class="donut-text">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donut-percent">10%</tspan>   
+                </text>
+                <text y="60%" transform="translate(0, 3)">
+                  <tspan x="50%" text-anchor="middle" class="donut-data">Elves</tspan>   
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="race-chart">
+            <svg width="100%" height="100%" viewBox="0 0 40 40" class="donut">
+              <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#171717"></circle>
+              <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5"></circle>
+              <circle class="ring-10" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5" stroke-dasharray="10 90" stroke-dashoffset="25"></circle>
+              <g class="donut-text">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donut-percent">10%</tspan>   
+                </text>
+                <text y="60%" transform="translate(0, 3)">
+                  <tspan x="50%" text-anchor="middle" class="donut-data">Humans</tspan>   
+                </text>
+              </g>
+            </svg>
+          </div>         
+        </div>
+
+        <div className="country-trivia grid-3">
+          <div>
+            <h4>Lanuages</h4>
+            <p>Dwarven, Gnomish and Common</p>
+          </div>
+          <div>
+            <h4>Terrain</h4>
+            <p>Grasslands valley between the mountains and the ocean</p>
+          </div>
+          <div>
+            <h4>Known For</h4>
+            <p>A large merchant harbor</p>
+          </div>
+        </div>
+
+        <img src={pattern} alt="pattern" className="melsensir-color pattern-image" />
+
+        <div className="container">
+          <h2>Weather</h2>
+          <div className="weather-box">
+            <h3>Winter Weather</h3>
+            <div>
+              <img src={snow} alt="snow" />
+              <h2>34-40 °F</h2>
+            </div>
+            <p>Very cold with occasional white out blizzards</p>
+          </div>
+          <div className="weather-box">
+            <h3>Summer Weather</h3>
+            <div>
+              <img src={mooncloud} alt="snow" />
+              <h2>68-82 °F</h2>
+            </div>
+            <p>Mild days with Cloudy Nights</p>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="passage-box">
+            <div className="passage">
+              <img src={geirankmap} alt="Geirank map" />
+              <div>
+                <h3>Contains passage to:</h3>
+                <ul>
+                  <li><Link to='/melsenshir/eldrith'>
+                    <h4>Eldrith</h4>
+                    <p>Eldrith is much further South.</p>  
+                  </Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     )
   }

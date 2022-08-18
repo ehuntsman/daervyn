@@ -20,7 +20,7 @@ export default class Kalnu extends Component {
     return (
       <div className="countries">
         <div className="container">
-          <img src={hero} alt="the shards" />
+          <img src={hero} alt="Kalnu" />
           <h1>Kalnu</h1>
           <p className="subheader">Home of the Dorni</p>
           <img src={pattern} alt="pattern" className="melsensir-color pattern-image" />
@@ -150,10 +150,6 @@ export default class Kalnu extends Component {
                   <li><Link to='/melsenshir/tergria'>
                     <h4>Tergria</h4>
                     <p>Tergria is just to the South of Kalnu.</p>
-                  </Link></li>
-                  <li><Link to='/melsenshir/eldrith'>
-                    <h4>Eldrith</h4>
-                    <p>Eldrith is much further South.</p>  
                   </Link></li>
                   <li><Link to='/skies'>
                     <h4>Daervyn Skies</h4>

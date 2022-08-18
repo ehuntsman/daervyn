@@ -1,4 +1,16 @@
 // Base *****************************************************************************
+.ring-100 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring100 3s;
+}
+
+.ring-99 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring99 3s;
+}
+
 .ring-90 {
   stroke: #ffffff;
   opacity: 0.5;
@@ -9,6 +21,12 @@
   stroke: #ffffff;
   opacity: 0.5;
   animation: ring85 3s;
+}
+
+.ring-80 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring80 3s;
 }
 
 .ring-50 {
@@ -46,9 +64,24 @@
   opacity: 0.5;
   animation: ring2 3s;
 }
+.ring-1 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring1 3s;
+}
 
 
 // keyframes *****************************************************************************
+
+@keyframes ring100 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 100, 0;}
+}
+
+@keyframes ring99 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 99, 1;}
+}
 
 @keyframes ring90 {
   0% { stroke-dasharray: 0, 100; }
@@ -58,6 +91,11 @@
 @keyframes ring85 {
   0% { stroke-dasharray: 0, 100; }
   100% { stroke-dasharray: 85, 15;}
+}
+
+@keyframes ring80 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 80, 20;}
 }
 
 @keyframes ring50 {
@@ -87,5 +125,5 @@
 
 @keyframes ring2 {
   0% { stroke-dasharray: 0, 100;}
-  100% { stroke-dasharray: 2, 98; }
+  100% { stroke-dasharray: 1, 99; }
 }

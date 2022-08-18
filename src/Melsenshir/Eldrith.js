@@ -8,16 +8,8 @@ import mooncloud from './images/moon-cloud.svg';
 
 import hero from './images/eldrithheader.png';
 import eldrith from './images/eldrith.png';
-import weather from '../Kvilna/images/weather.svg';
-import note from './images/music.png';
-import terrain from './images/terrain.png';
-import path from './images/path.png';
-import person from './images/person.png';
-import quartox from './images/quartox.png';
-import kalnumap from './images/kalnumap.png';
+import eldrithmap from './images/eldrithmap.png';
 
-import kalnu2 from './images/kalnu2.png';
-import kalnu3 from './images/kalnu3.jpg';
 
 export default class Eldrith extends Component {
   componentDidMount() {
@@ -27,7 +19,7 @@ export default class Eldrith extends Component {
     return (
       <div className="countries">
         <div className="container">
-          <img src={hero} alt="the shards" />
+          <img src={hero} alt="Eldrith" />
           <h1>Eldrith</h1>
           <p className="subheader">Coral and Pearl Haven</p>
           <img src={pattern} alt="pattern" className="melsensir-color pattern-image" />
@@ -148,21 +140,25 @@ export default class Eldrith extends Component {
         <div className="container">
           <div className="passage-box">
             <div className="passage">
-              <img src={kalnumap} alt="Kalnu map" />
+              <img src={eldrithmap} alt="Eldrith map" />
               <div>
                 <h3>Contains passage to:</h3>
                 <ul>
-                  <li><Link to='/melsenshir/kalnu'>
-                    <h4>Kalnu</h4>
-                    <p>Kalnu is just to the South of Tergria.</p>
-                  </Link></li>
                   <li><Link to='/melsenshir/tergria'>
                     <h4>Tergria</h4>
-                    <p>Tergria is just to the South of Kalnu.</p>
+                    <p>Tergria is just to the North of Eldrith.</p>
+                  </Link></li>
+                  <li><Link to='/melsenshir/geirank'>
+                    <h4>Geirank</h4>
+                    <p>Eldrith is North West of Geirank.</p>
                   </Link></li>
                   <li><Link to='/skies'>
                     <h4>Daervyn Skies</h4>
-                    <p>There is a flight point in Tergria that has flying serpents available for public use.</p>
+                    <p>There is a flight point in Geirank that has flying serpents available for public use.</p>
+                  </Link></li>
+                  <li><Link to='/melsenshir/deepcaves'>
+                    <h4>Deep Caves of Eldrith</h4>
+                    <p>In the mountains of Eldrith</p>  
                   </Link></li>
                 </ul>
               </div>

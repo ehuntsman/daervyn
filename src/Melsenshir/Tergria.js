@@ -21,7 +21,7 @@ export default class Tergria extends Component {
     return (
       <div className="countries">
         <div className="container">
-          <img src={hero} alt="the shards" />
+          <img src={hero} alt="Tergria" />
           <h1>Tergria</h1>
           <p className="subheader">Home of Dwarven craftsman</p>
           <img src={pattern} alt="pattern" className="melsensir-color pattern-image" />
@@ -142,7 +142,7 @@ export default class Tergria extends Component {
         <div className="container">
           <div className="passage-box">
             <div className="passage">
-              <img src={kalnumap} alt="Kalnu map" />
+              <img src={kalnumap} alt="Tergria map" />
               <div>
                 <h3>Contains passage to:</h3>
                 <ul>
