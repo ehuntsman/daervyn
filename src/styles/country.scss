@@ -1,0 +1,163 @@
+@import './Keyframes.scss';
+
+.countries {
+  .half-container img {
+    padding-left: 32px;
+    @media screen and (max-width: 900px) {
+      padding-left: 0;
+    }
+  }
+  .country-trivia {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    p {
+      margin-top: 0;
+    }
+  }
+  h4 {
+    font-family: 'Uncial Antiqua', serif;
+    font-size: 20px;
+    font-weight: 100;
+   }
+  .grid-3 {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    display: grid;
+    gap: 32px;
+  }
+  .npc-sub {
+    color: #ada193;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Uncial Antiqua', serif;
+  }
+  .local-info {
+    text-align: left;
+    img {
+      height: 200px;
+    }
+  }
+  .weather-box {
+    display: inline-block;
+    width: 50%;
+    h2 {
+      display: inline;
+      vertical-align: top;
+    }
+    img {
+      max-height: 62px;
+      margin: 0;
+      vertical-align: bottom;
+    }
+  }
+  .passage-box {
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #584e42;
+    margin: 20px 0 50px 0;
+    h3 {
+      margin-bottom: 0;
+    }
+    .passage {
+      display: flex;
+      text-align: left;
+      img {
+        width: 250px;
+        height: fit-content;
+      }
+      div {
+        padding-left: 40px;
+        max-width: calc(90% - 250px);
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      a {
+        color: #ada193;
+        text-decoration: none;
+      }
+      p {
+        margin-top: 0;
+      }
+      @media screen and (max-width: 900px) {
+        display: block;
+      }
+    }
+  }
+}
+
+
+// ************************************************************************************************ Race Chart
+
+.race-chart {
+  max-width: 250px;
+  width: 30%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 auto;
+  animation: donutfade 1s;
+  padding: 20px;
+}
+
+@keyframes donutfade {
+  0% {
+      opacity: .2;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .race-chart {
+      width: 80%;
+  }
+}
+
+.donut-ring {
+  stroke: #ffffff;
+  opacity: 0.2;
+}
+
+.donut-percent {
+  animation: donutfadelong 1s;
+}
+
+@keyframes donutfadelong {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.donut-text {
+  font-family: 'Uncial Antiqua', serif;
+  fill: #c8bbab;
+}
+
+.donut-label {
+  font-size: 0.28em;
+  font-weight: 700;
+  line-height: 1;
+  fill: #000;
+}
+
+.donut-percent {
+  font-size: 0.5em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.donut-data {
+  font-size: 0.2em;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 2;
+  text-align: center;
+  text-anchor: middle;
+  color:#49576d;
+  fill: #c8bbab;
+  animation: donutfadelong 1s;
+}

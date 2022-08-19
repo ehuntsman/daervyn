@@ -1,28 +1,27 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './Home/Home';
-import Oirae from './Kvilna/Oirae';
-import Thinningveil from './Kvilna/Thinningveil';
-import Kalnu from './Melsenshir/Kalnu';
-import Tergria from './Melsenshir/Tergria';
-import Eldrith from './Melsenshir/Eldrith';
-import Deepcaves from './Melsenshir/Deepcaves';
-import Geirank from './Melsenshir/Geirank';
-import Bjorvax from './Kvilna/Bjorvax';
-import Sleepingphantom from './Sirena/Sleepingphantom';
-import Rgra from './Sirena/Rgra';
-import Annalay from './Sirena/Annalay';
-import Aerkyn from './Sirena/Aerkyn';
-import Cliffaerkyn from './Sirena/Cliffaerkyn';
-import Reijah from './Kvilna/Reijah';
-import Southern from './Kvilna/Southern';
-import Skaro from './Home/Skaro';
-import Portal from './Kvilna/Portal';
-import Hringir from './Home/Hringir';
-import Skies from './Home/Skies';
-import Shards from './Story/Shards';
-import Races from './Story/Races';
-import Bestiary from './Home/Home';
+import Home from './components/Home';
+import Oirae from './components/Oirae';
+import Thinningveil from './components/Thinningveil';
+import Kalnu from './components/Kalnu';
+import Tergria from './components/Tergria';
+import Eldrith from './components/Eldrith';
+import Deepcaves from './components/Deepcaves';
+import Geirank from './components/Geirank';
+import Bjorvax from './components/Bjorvax';
+import Sleepingphantom from './components/Sleepingphantom';
+import Rgra from './components/Rgra';
+import Annalay from './components/Annalay';
+import Aerkyn from './components/Aerkyn';
+import Cliffaerkyn from './components/Cliffaerkyn';
+import Reijah from './components/Reijah';
+import Southern from './components/Southern';
+import Skaro from './components/Skaro';
+import Hringir from './components/Hringir';
+import Skies from './components/Skies';
+import Shards from './components/Shards';
+import Races from './components/Races';
+import Bestiary from './components/Home';
 
 export default(
   <Switch>
@@ -49,7 +48,6 @@ export default(
     <Route component={Thinningveil} path="/kvilna/thinningveil" />
     <Route component={Reijah} path="/kvilna/reijah" />
     <Route component={Southern} path="/kvilna/southernharbor" />
-    <Route component={Portal} path="/kvilna/selnataportal" />
 
     <Route component={Hringir} path="/hringir" />
     <Route component={Skies} path="/skies" />

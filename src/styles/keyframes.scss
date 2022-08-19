@@ -1,0 +1,151 @@
+// Base *****************************************************************************
+.ring-100 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring100 3s;
+}
+
+.ring-99 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring99 3s;
+}
+
+.ring-90 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring90 3s;
+}
+
+.ring-85 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring85 3s;
+}
+
+.ring-80 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring80 3s;
+}
+
+.ring-60 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring60 3s;
+}
+
+.ring-50 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring50 3s;
+}
+
+.ring-40 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring40 3s;
+}
+
+.ring-20 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring20 3s;
+}
+
+.ring-10 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring10 3s;
+}
+
+.ring-8 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring8 3s;
+}
+
+.ring-5 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring5 3s;
+}
+
+.ring-2 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring2 3s;
+}
+.ring-1 {
+  stroke: #ffffff;
+  opacity: 0.5;
+  animation: ring1 3s;
+}
+
+
+// keyframes *****************************************************************************
+
+@keyframes ring100 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 100, 0;}
+}
+
+@keyframes ring99 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 99, 1;}
+}
+
+@keyframes ring90 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 90, 10;}
+}
+
+@keyframes ring85 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 85, 15;}
+}
+
+@keyframes ring80 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 80, 20;}
+}
+
+@keyframes ring60 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 60, 40;}
+}
+
+@keyframes ring50 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 50, 50;}
+}
+
+@keyframes ring40 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 40, 60;}
+}
+
+@keyframes ring20 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 20, 80;}
+}
+
+@keyframes ring10 {
+  0% { stroke-dasharray: 0, 100; }
+  100% { stroke-dasharray: 10, 90;}
+}
+
+@keyframes ring8 {
+  0% { stroke-dasharray: 0, 100;}
+  100% { stroke-dasharray: 8, 92;}
+}
+
+@keyframes ring5 {
+  0% { stroke-dasharray: 0, 100;}
+  100% { stroke-dasharray: 5, 95;}
+}
+
+@keyframes ring2 {
+  0% { stroke-dasharray: 0, 100;}
+  100% { stroke-dasharray: 1, 99; }
+}
